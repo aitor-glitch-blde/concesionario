@@ -1,0 +1,71 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    margin: 20px auto;
+    background-image: url('./IMG/fondo-mobile.webp'); /* Fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-container {
+    position: absolute;
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+/* Posiciones ajustadas */
+.top-left {
+    top: 0px;
+    left: 0%;
+}
+.top-right {
+    top: 0px;
+    right: 0%;
+}
+.center {
+    top: 35%;
+    left: 45%;
+}
+.bottom-left {
+    bottom: 0px;
+    left: 0%;
+}
+.bottom-right {
+    bottom: 0px;
+    right: 0%;
+}
